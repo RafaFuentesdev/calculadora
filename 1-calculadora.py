@@ -1,40 +1,15 @@
 from simple_term_menu import TerminalMenu
 
 
-def sumar():
-    pass
-
-
-def restar():
-    pass
-
-
-def multiplicar():
-    pass
-
-
-def dividir():
-    pass
-
-
-def salir():
-    pass
-
-
 def main():
-    opciones = {
-        "Sumar": sumar,
-        "Restar": restar,
-        "Multiplicar": multiplicar,
-        "Dividir": dividir,
-        "Salir": salir,
-    }
+    opciones = ["Sumar", "Restar", "Multiplicar", "Dividir", "Salir"]
 
     menu = TerminalMenu(opciones, clear_screen=True)
 
-    opcion_seleccionada = menu.show()
+    indice_seleccionado = menu.show()
 
-    print(opcion_seleccionada)
+    print(indice_seleccionado)
+
 
 if __name__ == "__main__":
     main()
